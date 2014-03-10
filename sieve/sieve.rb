@@ -12,7 +12,6 @@ class Sieve
       range.delete_if { |z| z % x != 0 }
       range_array.delete_if { |q| range.include?(q) }
     end
-
     return result
   end
 

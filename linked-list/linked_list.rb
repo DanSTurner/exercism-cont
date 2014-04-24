@@ -25,7 +25,6 @@ class Deque
     num_of_items.times do
       @start.prev.prev.next = @start
       @start.prev = @start.prev.prev
-
     end
     return popped_value
   end
@@ -35,7 +34,6 @@ class Deque
     num_of_items.times do
       @start.next.next.prev = @start
       @start.next = @start.next.next
-
     end
     return shifted_value
   end
